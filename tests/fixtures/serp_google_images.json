@@ -1,0 +1,61 @@
+{
+ "input": {
+  "query": "golden gate bridge",
+  "country": "us",
+  "lang": "en",
+  "num": 3
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://www.google.com/search?q=golden%20gate%20bridge&udm=2&gl=us&hl=en",
+   "created_at": "2026-10-22T23:14:43.764Z",
+   "total_time_taken": 2.08
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "golden gate bridge",
+   "search_type": "images",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "images": [
+   {
+    "rank": 1,
+    "title": "Golden Gate Bridge -...",
+    "thumbnail": "http://t0.gstatic.com/images?q=tbn:ANd9GcRhPt37uKX9cWLaX2rEW0Rt_wiZURahYlvA8seS2PBsOZLzL8FaELQNJq8wS-k&s",
+    "source": "en.wikipedia.org",
+    "source_url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+   },
+   {
+    "rank": 2,
+    "title": "Golden Gate Bridge -...",
+    "thumbnail": "http://t0.gstatic.com/images?q=tbn:ANd9GcRO9fHAaackVZRPKEK9nIP7VYCGyAG4q-0aDm4henH7Z953PTqL4xTJXPfg7Q&s",
+    "source": "www.history.com",
+    "source_url": "https://www.history.com/articles/golden-gate-bridge"
+   },
+   {
+    "rank": 6,
+    "title": "The Icon: Golden Gate...",
+    "thumbnail": "http://t0.gstatic.com/images?q=tbn:ANd9GcS19EXvu_XIBadIJ7tBKZkeJdNJicac6Rlka6civnsnYCabS_T6pXV4SiW_Mw&s",
+    "source": "www.nationalgeographic.com",
+    "source_url": "https://www.nationalgeographic.com/travel/article/the-icon-golden-gate-bridge"
+   }
+  ],
+  "pagination": {
+   "current": 1,
+   "next": 2,
+   "available_pages": [
+    1,
+    2,
+    3
+   ],
+   "has_next": true
+  }
+ },
+ "finished_at": "2026-10-22T23:14:46Z",
+ "_note": "Real call of 2026-10-22; three of twenty images kept."
+}

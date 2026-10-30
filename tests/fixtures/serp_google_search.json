@@ -1,0 +1,83 @@
+{
+ "input": {
+  "query": "best usb c hub for macbook",
+  "country": "us",
+  "lang": "en",
+  "num": 10
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://www.google.com/search?q=best%20usb%20c%20hub%20for%20macbook&gl=us&hl=en",
+   "created_at": "2026-10-22T23:10:05.439Z",
+   "total_time_taken": 4.75
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "best usb c hub for macbook",
+   "search_type": "search",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "organic": [
+   {
+    "rank": 1,
+    "title": "Best USB-C hubs and dongles: Add ports to your laptop or tablet",
+    "link": "https://www.pcworld.com/article/402858/the-best-usb-c-hubs-for-your-laptop-tablet-or-2-in-1.html",
+    "display_link": "www.pcworld.com › Accessories › Computer Accessories",
+    "source": "pcworld.com",
+    "description": "Anker 555 8-in-1 USB-C Hub Best overall USB-C hub. Excellent build quality Supplies 85W of power Good mix of ports. USB-C is common among Macs, ...",
+    "date": "Oct 7, 2026"
+   },
+   {
+    "rank": 3,
+    "title": "Best USB-C hubs and adapters for Mac 2026 - Macworld",
+    "link": "https://www.macworld.com/article/668462/best-usb-c-hubs-and-adapters-for-mac.html",
+    "display_link": "www.macworld.com › ... › Laptop Accessories › Docks and Hubs",
+    "source": "macworld.com",
+    "description": "The Anker 555 USB-C 8-in-1 Hub is compact and powerful, offering greater specs than some of the other leading options on this list. It's one of ...",
+    "date": "Oct 6, 2026"
+   },
+   {
+    "rank": 4,
+    "title": "USB C Hub For Mac - Best Buy",
+    "link": "https://www.bestbuy.com/site/shop/usb-c-hub-for-mac",
+    "display_link": "www.bestbuy.com › ... › cables & connectors › usb hubs",
+    "source": "bestbuy.com",
+    "description": "Product Description. A portable midnight blue USB-C hub with 6 ports, 4K HDMI, 10Gbps transfers, and 100W charging. See all USB Hubs. $69.99 ...",
+    "rating": 4.6,
+    "reviews": 1700
+   }
+  ],
+  "related_searches": [
+   {
+    "query": "Best usb c hub for macbook reddit"
+   },
+   {
+    "query": "Best usb c hub for macbook pro"
+   },
+   {
+    "query": "Best usb c hub for macbook air"
+   },
+   {
+    "query": "Anker 555 8-in-1 USB-C Hub"
+   }
+  ],
+  "ai_overview": "Best Overall Hub: Anker 555 8-in-1 USB-C Hub – Features 8 ports, 85W power delivery pass-through, and 10Gbps data transfer speeds. Best Value / Budget Hub: Anker 547 USB-C Hub (7-in-2) – A desktop-style option with multiple USB-C and USB-A ports, HDMI, and card readers starting around $35–$54. ...",
+  "pagination": {
+   "current": 1,
+   "next": 3,
+   "available_pages": [
+    1,
+    2,
+    3
+   ],
+   "has_next": true
+  }
+ },
+ "finished_at": "2026-10-22T23:10:10Z",
+ "_note": "Real call of 2026-10-22. Three of the ten organic results kept, redirect_link omitted, AI Overview cut after two items."
+}

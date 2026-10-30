@@ -1,0 +1,63 @@
+{
+ "input": {
+  "query": "electric vehicles",
+  "country": "us",
+  "lang": "en",
+  "num": 3
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://www.google.com/search?q=electric%20vehicles&tbm=nws&gl=us&hl=en",
+   "created_at": "2026-10-22T23:14:43.020Z",
+   "total_time_taken": 2.99
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "electric vehicles",
+   "search_type": "news",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "news": [
+   {
+    "rank": 1,
+    "title": "Americans Are Spending More Money to Drive Worse Cars",
+    "link": "https://www.theatlantic.com/technology/2026/10/americans-not-buying-electric-cars/689071/",
+    "source": "The Atlantic",
+    "date": "3 days ago",
+    "description": "If high gas prices won't persuade drivers to go electric, what will?"
+   },
+   {
+    "rank": 5,
+    "title": "We Drive the New 2027 BMW iX5, the Electric Version of the X5",
+    "link": "https://www.caranddriver.com/reviews/a74178960/2027-bmw-ix5-drive/",
+    "source": "Car and Driver",
+    "date": "4 hours ago",
+    "description": "BMW's long run of experimental, out-there electric vehicles has been slowly coming to a close. It started with the radical i3 and i8 in the..."
+   },
+   {
+    "rank": 9,
+    "title": "BYD is about to launch this luxury electric SUV with 623 miles of range",
+    "link": "https://electrek.co/2026/10/22/byd-launch-luxury-ev-suv-623-miles-range/",
+    "source": "Electrek",
+    "date": "2 hours ago",
+    "description": "BYD will open pre-orders for the Denza N8 EV next week, a large five-seat luxury electric SUV with a CLTC range of over 623 miles (1,000 km)..."
+   }
+  ],
+  "pagination": {
+   "current": 1,
+   "next": 2,
+   "available_pages": [
+    1,
+    2
+   ],
+   "has_next": true
+  }
+ },
+ "finished_at": "2026-10-22T23:14:46Z",
+ "_note": "Real call of 2026-10-22; three of twelve articles kept."
+}

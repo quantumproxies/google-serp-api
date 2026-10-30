@@ -1,0 +1,85 @@
+{
+ "input": {
+  "query": "coffee shop",
+  "location": "Austin, Texas, United States",
+  "country": "us",
+  "lang": "en",
+  "num": 3
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://www.google.com/search?q=coffee%20shop&tbm=lcl&gl=us&hl=en",
+   "created_at": "2026-10-22T23:14:47.176Z",
+   "total_time_taken": 3.03
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "coffee shop",
+   "search_type": "places",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "places": [
+   {
+    "rank": 2,
+    "name": "Black Fox Coffee",
+    "rating": 4.6,
+    "reviews": 82,
+    "category": "Coffee shop",
+    "address": "323 W 6th St, Austin, TX 78701",
+    "website": "blackfoxcoffee.com",
+    "link": "https://www.google.com/maps/place/?q=place_id:0x8644b56516bc162b:0x3a42efe8264e399c",
+    "gps_coordinates": {
+     "latitude": 30.268645099999997,
+     "longitude": -97.7460543
+    },
+    "place_id": "0x8644b56516bc162b:0x3a42efe8264e399c",
+    "data_id": "0x8644b56516bc162b:0x3a42efe8264e399c",
+    "weekly_hours": {
+     "Thursday": "7 AM–5 PM",
+     "Friday": "7 AM–5 PM",
+     "Saturday": "8 AM–4 PM",
+     "Sunday": "8 AM–4 PM",
+     "Monday": "7 AM–5 PM",
+     "Tuesday": "7 AM–5 PM",
+     "Wednesday": "7 AM–5 PM"
+    },
+    "open_state": "Closed · Opens 7 AM Fri"
+   },
+   {
+    "rank": 9,
+    "name": "Houndstooth Coffee",
+    "rating": 4.5,
+    "reviews": 1220,
+    "category": "Coffee shop",
+    "address": "401 Congress Ave. #100c, Austin, TX 78701",
+    "phone": "(512) 394-6051",
+    "website": "houndstoothcoffee.com",
+    "link": "https://www.google.com/maps/place/?q=place_id:0x8644b50847967b9f:0x9c58a6fceb42fe15",
+    "gps_coordinates": {
+     "latitude": 30.266216,
+     "longitude": -97.743066
+    },
+    "place_id": "0x8644b50847967b9f:0x9c58a6fceb42fe15",
+    "data_id": "0x8644b50847967b9f:0x9c58a6fceb42fe15",
+    "description": "Contemporary cafe serving select coffees, teas, wines, craft beer & pastries in a chill setting.",
+    "open_state": "Closes soon · 7 PM · Opens 6:30 AM Fri"
+   }
+  ],
+  "pagination": {
+   "current": 1,
+   "next": 2,
+   "available_pages": [
+    1,
+    2
+   ],
+   "has_next": true
+  }
+ },
+ "finished_at": "2026-10-22T23:14:50Z",
+ "_note": "Real call of 2026-10-22; two of twenty places kept, thumbnails and the hours string omitted."
+}

@@ -1,0 +1,105 @@
+{
+ "input": {
+  "query": "air fryer",
+  "country": "us",
+  "lang": "en"
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://trends.google.com/trends/explore?q=air%20fryer&geo=US",
+   "created_at": "2026-10-22T23:14:52.836Z",
+   "total_time_taken": 8.13
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "air fryer",
+   "search_type": "trends",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "trends": {
+   "keywords": [
+    "air fryer"
+   ],
+   "timeframe": "today 12-m",
+   "geo": "US",
+   "interest_over_time": [
+    {
+     "date": "Apr 5 – 11, 2026",
+     "timestamp": 1775347200,
+     "value": 92
+    },
+    {
+     "date": "Apr 12 – 18, 2026",
+     "timestamp": 1775952000,
+     "value": 100
+    },
+    {
+     "date": "Apr 19 – 25, 2026",
+     "timestamp": 1776556800,
+     "value": 89
+    },
+    {
+     "date": "Oct 11 – 17, 2026",
+     "timestamp": 1791676800,
+     "value": 55
+    },
+    {
+     "date": "Oct 18 – 24, 2026",
+     "timestamp": 1792281600,
+     "value": 57,
+     "partial": true
+    }
+   ],
+   "related_queries": {
+    "top": [
+     {
+      "query": "air fryer chicken",
+      "value": 100,
+      "formatted": "100"
+     },
+     {
+      "query": "air fryer ninja",
+      "value": 60,
+      "formatted": "60"
+     },
+     {
+      "query": "best air fryer",
+      "value": 36,
+      "formatted": "36"
+     }
+    ],
+    "rising": [
+     {
+      "query": "best air fryer 2026",
+      "value": 7250,
+      "formatted": "Breakout"
+     },
+     {
+      "query": "coffee grinder",
+      "value": 3950,
+      "formatted": "+3,950%"
+     },
+     {
+      "query": "how to use air fryer",
+      "value": 150,
+      "formatted": "+150%"
+     }
+    ]
+   }
+  },
+  "pagination": {
+   "current": 1,
+   "available_pages": [
+    1
+   ],
+   "has_next": false
+  }
+ },
+ "finished_at": "2026-10-22T23:15:00Z",
+ "_note": "Real call of 2026-10-22; five of the 53 weekly points and three related queries per list kept."
+}

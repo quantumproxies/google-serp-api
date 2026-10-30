@@ -1,0 +1,59 @@
+{
+ "input": {
+  "query": "google serp",
+  "country": "us",
+  "lang": "en"
+ },
+ "response": {
+  "search_metadata": {
+   "status": "Success",
+   "engine": "google",
+   "search_url": "https://www.google.com/complete/search?q=google%20serp&client=chrome&hl=en&gl=us",
+   "created_at": "2026-10-22T22:19:15.005Z",
+   "total_time_taken": 1.15
+  },
+  "search_parameters": {
+   "engine": "google",
+   "q": "google serp",
+   "search_type": "autocomplete",
+   "device": "desktop",
+   "country": "us",
+   "language": "en",
+   "page": 1
+  },
+  "suggestions": [
+   {
+    "rank": 1,
+    "value": "google serp api",
+    "relevance": 1250,
+    "type": "QUERY"
+   },
+   {
+    "rank": 2,
+    "value": "google serper",
+    "relevance": 602,
+    "type": "QUERY"
+   },
+   {
+    "rank": 3,
+    "value": "google serp position",
+    "relevance": 601,
+    "type": "QUERY"
+   },
+   {
+    "rank": 8,
+    "value": "google serp checker",
+    "relevance": 557,
+    "type": "QUERY"
+   },
+   {
+    "rank": 9,
+    "value": "google serp preview tool",
+    "relevance": 556,
+    "type": "QUERY"
+   }
+  ]
+ },
+ "finished_at": "2026-10-22T22:19:16Z",
+ "_note": "Real call of 2026-10-22; five of fifteen suggestions kept."
+}

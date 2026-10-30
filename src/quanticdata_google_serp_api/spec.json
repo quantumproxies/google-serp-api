@@ -1,0 +1,411 @@
+{
+ "cli": "google-serp",
+ "name": "Google SERP API",
+ "version": "0.1.0",
+ "description": "Google SERP API for Python and the command line: organic results with the AI Overview, news, images, local places, autocomplete and Google Trends as JSON or CSV. Free and open source; sign in with your QuanticData account, no Google API key or proxies needed.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/google-serp-api",
+  "page": "https://quanticdata.io/serp-api/?utm_source=github&utm_medium=cli&utm_campaign=google-serp-api",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=google-serp-api",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=google-serp-api"
+ },
+ "commands": [
+  {
+   "name": "search",
+   "collector": null,
+   "method": "search",
+   "help": "Google organic results, AI Overview and related searches",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "search"
+   },
+   "rows_key": "organic",
+   "row_field": "value",
+   "description": "Google web results for a query: organic results with rank, title, link, snippet and date, plus the AI Overview, related searches and pagination when Google shows them.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "title",
+    "source",
+    "date"
+   ],
+   "sample": "serp_google_search",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "What to search, e.g. \"best usb c hub for macbook\".",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": false,
+     "description": "Search from this place, e.g. \"Milan, Italy\": the results a searcher there sees.",
+     "arg": "location"
+    },
+    {
+     "name": "device",
+     "type": "string",
+     "required": false,
+     "description": "Desktop or mobile results page.",
+     "enum": [
+      "desktop",
+      "mobile"
+     ],
+     "default": "desktop",
+     "arg": "device"
+    },
+    {
+     "name": "num",
+     "type": "integer",
+     "required": false,
+     "description": "How many organic results to collect, 1 to 100; Google serves about 10 per page and the pages are merged.",
+     "arg": "num"
+    },
+    {
+     "name": "page",
+     "type": "integer",
+     "required": false,
+     "description": "Result page, 1-based.",
+     "arg": "page"
+    },
+    {
+     "name": "safe",
+     "type": "string",
+     "required": false,
+     "description": "SafeSearch.",
+     "enum": [
+      "active",
+      "off"
+     ],
+     "arg": "safe"
+    }
+   ]
+  },
+  {
+   "name": "news",
+   "collector": null,
+   "method": "news",
+   "help": "Google News articles for a topic",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "news"
+   },
+   "rows_key": "news",
+   "row_field": "value",
+   "description": "Google News results for a query: title, publisher, how long ago, snippet and link.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "title",
+    "source",
+    "date"
+   ],
+   "sample": "serp_google_news",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Topic to search in Google News, e.g. \"electric vehicles\".",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": false,
+     "description": "Search from this place, e.g. \"Milan, Italy\": the results a searcher there sees.",
+     "arg": "location"
+    },
+    {
+     "name": "num",
+     "type": "integer",
+     "required": false,
+     "description": "Results to request (clamped to 1–100 by the service; Google serves ~10 per page and merges pages — see `search_metadata.paging`).",
+     "arg": "num"
+    },
+    {
+     "name": "page",
+     "type": "integer",
+     "required": false,
+     "description": "Result page, 1-based.",
+     "arg": "page"
+    }
+   ]
+  },
+  {
+   "name": "images",
+   "collector": null,
+   "method": "images",
+   "help": "Google Images results for a query",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "images"
+   },
+   "rows_key": "images",
+   "row_field": "value",
+   "description": "Google Images results for a query: thumbnail, the page that uses the image and its host.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "source",
+    "source_url"
+   ],
+   "sample": "serp_google_images",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "What to search in Google Images.",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    },
+    {
+     "name": "num",
+     "type": "integer",
+     "required": false,
+     "description": "Results to request (clamped to 1–100 by the service; Google serves ~10 per page and merges pages — see `search_metadata.paging`).",
+     "arg": "num"
+    },
+    {
+     "name": "page",
+     "type": "integer",
+     "required": false,
+     "description": "Result page, 1-based.",
+     "arg": "page"
+    },
+    {
+     "name": "safe",
+     "type": "string",
+     "required": false,
+     "description": "SafeSearch.",
+     "enum": [
+      "active",
+      "off"
+     ],
+     "arg": "safe"
+    }
+   ]
+  },
+  {
+   "name": "places",
+   "collector": null,
+   "method": "places",
+   "help": "local businesses from Google's local results",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "places"
+   },
+   "rows_key": "places",
+   "row_field": "value",
+   "description": "Local results for a query in a place: name, rating, review count, category, address, phone, website, coordinates, opening hours and the place id.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "name",
+    "rating",
+    "reviews",
+    "address"
+   ],
+   "sample": "serp_google_places",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Business type or name, e.g. \"coffee shop\"; set the place with --location.",
+     "arg": "query"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": false,
+     "description": "Where to search, as a place name, e.g. \"Austin, Texas, United States\".",
+     "arg": "location"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    },
+    {
+     "name": "num",
+     "type": "integer",
+     "required": false,
+     "description": "Results to request (clamped to 1–100 by the service; Google serves ~10 per page and merges pages — see `search_metadata.paging`).",
+     "arg": "num"
+    },
+    {
+     "name": "page",
+     "type": "integer",
+     "required": false,
+     "description": "Result page, 1-based.",
+     "arg": "page"
+    },
+    {
+     "name": "gps_coordinates",
+     "type": "string",
+     "required": false,
+     "description": "`maps`/`places`: map center `lat,lon[,zoom]`. Wins over `uule` and `location`.",
+     "arg": "gps_coordinates"
+    }
+   ]
+  },
+  {
+   "name": "autocomplete",
+   "collector": null,
+   "method": "autocomplete",
+   "help": "Google autocomplete suggestions for a seed",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "autocomplete"
+   },
+   "rows_key": "suggestions",
+   "row_field": "value",
+   "description": "The suggestions Google offers while typing a seed query, with Google's own relevance score: real searches people make, for keyword research.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "value",
+    "relevance"
+   ],
+   "sample": "serp_google_autocomplete",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Seed query whose suggestions you want, e.g. \"google serp\".",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    }
+   ]
+  },
+  {
+   "name": "trends",
+   "collector": null,
+   "method": "trends",
+   "help": "Google Trends interest over time and related queries",
+   "endpoint": "serp",
+   "fixed": {
+    "engine": "google",
+    "search_type": "trends"
+   },
+   "rows_key": "trends.interest_over_time",
+   "row_field": "value",
+   "description": "Google Trends for a keyword: interest over time for the last 12 months (0 to 100), plus the top and rising related queries in the full response.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "date",
+    "value"
+   ],
+   "sample": "serp_google_trends",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Keyword to read in Google Trends, e.g. \"air fryer\".",
+     "arg": "query"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "lang",
+     "type": "string",
+     "required": false,
+     "description": "UI language, e.g. `en`, `it`.",
+     "arg": "lang"
+    }
+   ]
+  }
+ ]
+}
